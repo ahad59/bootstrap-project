@@ -6,7 +6,7 @@
 }
 nav{
     background-color: burlywood;
-    overflow: auto;
+    overflow: hidden;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -77,7 +77,7 @@ label{
     padding: 30px;
     background-color: white;
     border: 2px solid;
-   position: absolute;
+    position: absolute;
    margin-top: 20px;
 }
 #lg{
@@ -126,3 +126,24 @@ p {
     margin-top: 50px;
 }
 
+li.navpic img {
+    display: none;
+    width: 24px;
+
+}
+
+@media screen and (max-width: 860px) {
+    li.navmenu {
+        display: none;
+    }
+    div.logobox {
+        display: none;
+    }
+    div.loginbox {
+        display: none;
+    }
+    li.navpic img{
+        display: block;
+    }
+
+}
