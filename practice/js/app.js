@@ -76,8 +76,53 @@ else {
     alert("You entered invalid credentials");
 }
 
+const ourPlanet = "Earth";
+let myAge = 24;
+myAge = 25;
+console.log(myAge);
 
+// Shift removes the first element in the array and in unshift element is added on the left side from the starting 
+const students = ["Ali", "Affan", "Ahad", "Sameer"];
+const removedStudentName = students.shift();
+alert("Removed Student: " + removedStudentName);
+const totalStudents = students.unshift("Rehan", "Bashir");
+alert("Total Class Strength is: " + totalStudents);
+const indexNumber = 1
+console.log(students);
 
+// In push elements are added from the right side and in Pop elements are removed from the right side 
+const teachers = ["ramiz", "hadi", "bano"];
+const pushReturn = teachers.push("waleed", "saad");
+alert("Students pushed: " +pushReturn);
+console.log(teachers);
+const popReturn = teachers.pop();
+alert("Students popped: " +popReturn);
+console.log(teachers);
+
+const students10 = ["Minhas", "Arafat", "Irfan"];
+const deleteItem = students10.splice(1,2, "khan");
+console.log(deleteItem);
+console.log(students10);
+
+const copyTeachers = teachers.slice(2, 4);
+console.log(copyTeachers);
+
+const students20 = ["nani", "dadi", "dada", "nana"]
+const copyArray = students20.toSpliced(0, 2, "owais");
+console.log(copyArray, "copyarray");
+console.log(students20, "students20");
+
+const tableValue = 5;
+for (let i = 1; i <= 10; i++) {
+const concatenated = tableValue + " X " + i + " = " + i*tableValue;
+console.log(concatenated)
+}
+
+const tableValue1 = 10;
+for (let i = 1; i<=12; i++) {
+    const concat = tableValue1 + " X " + i + " = " + i*tableValue1;
+    console.log(concat);
+}
 
 
 
