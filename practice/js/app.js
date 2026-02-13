@@ -124,5 +124,108 @@ for (let i = 1; i<=12; i++) {
     console.log(concat);
 }
 
+for (let i = 10; i >0; i--) {
+    console.log("Salam", i)
+}
 
+// Loopus interruptus
+for (let i = 0; i < 10; i++) {
+      console.log(i, "===running");
+
+    if (i == 2) {
+   break;
+  }
+
+   console.log(i,"===after-running");
+ }
+
+ const myNumbers = [1, 2, 13, 4, 5, 5, 8, 6, 8, 9, 10, 11, 12];
+let isNumberFound = false;
+
+for (let i = 0; i < myNumbers.length; i++) {
+  const element = myNumbers[i];
+  if (element === 13) {
+    isNumberFound = true;
+    break;
+  }
+  console.log(element);
+}
+console.log(isNumberFound);
+
+const Numbers = [1, 4, 13, 0, 6, 5, 8, 9, 15, 3, 10, 11, 2];
+let findingNumber = 6;
+
+for (let i = 0; i < Numbers.length; i++) {
+      const item = Numbers[i];
+      if(item === findingNumber) {
+        findingNumber = true;
+        break;
+      }
+      console.log(item);
+}
+console.log("Number is found", findingNumber);
+
+const email1 = "ahad@mailinator.com";
+const userEnteredEmail = prompt("Enter your email to login");
+const userEnteredLower = userEnteredEmail.toLowerCase();
+// // debugger;
+
+if (email1 === userEnteredLower){
+    alert("Login Succesfully");
+} 
+else {
+    alert("Invalid Credentials");
+} 
+console.log(email1[3],email1.length)
+const userName = email1.slice(0,4)
+console.log(userName)
+
+const country = "afghanistan"
+let firstLetter = country[0];
+let otherLetters = country.slice(1);
+
+firstLetter = firstLetter.toUpperCase()
+otherLetters = otherLetters.toLowerCase()
+
+const finalCountryName = firstLetter + otherLetters
+console.log(finalCountryName)
+
+const email2 = "ahadi@mailinator.com";
+const startindex = email2.indexOf("@");
+const userName1 = email2.slice(0,startindex);
+console.log("The username is: ", userName1);
+
+
+const txt = "the quick brown fox jump over a lazy queen dog";
+
+let totalWords = 0;
+ for (let i = 0; i < txt.length; i++) {
+   const item1 = txt[i];
+   if (item1 === " ") totalWords++;
+ }
+ if (totalWords) totalWords = totalWords + 1;
+ console.log(totalWords);
+
+ console.log(txt[2])
+ const indexOf = txt.indexOf("this");
+ const lastIndexOf = txt.lastIndexOf("q");
+ console.log(indexOf, lastIndexOf);
+
+ const userWord = "queen";
+ let indexNumber1 = -1;
+ for (let i = 0; i < txt.length; i++) {
+   const item1 = txt.slice(i, i + userWord.length);
+    console.log(item1);
+   if (item1 === userWord) {
+     indexNumber1 = i;
+     break;
+   }
+ }
+
+ console.log(indexNumber1);
+
+
+ const greeting = "Hello! Hello! How're you everyone?";
+ const newGreetings = greeting.replaceAll("Hello", "Hey");
+ console.log(newGreetings)
 
